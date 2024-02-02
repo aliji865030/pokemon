@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKEMON</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d846ac8a58.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    onload="
+     firstStep()
+    
+  "
+  >
+
+
+     <h1>POKEMON</h1>
+    <div class="headder">
+      <div class="headder_head">
+        <!-- <input type="text" id="pokemonName"> -->
+        <div class="wave-group">
+          <input required="" type="text" class="input" id="pokemonName" />
+          <span class="bar"></span>
+          <label class="label">
+            <span class="label-char" style="--index: 0">N</span>
+            <span class="label-char" style="--index: 1">a</span>
+            <span class="label-char" style="--index: 2">m</span>
+            <span class="label-char" style="--index: 3">e</span>
+          </label>
+        </div>
+        <!-- <button id="searchByName">Search by name</button> -->
+
+        <button>
+          <span class="box" id="searchByName"> Search by name </span>
+        </button>
+      </div>
+
+      <div>
+        <select name="" id="selectType">
+          <option value="type">Type</option>
+        </select>
+        <!-- <button id="byType">Filter by type</button> -->
+
+        <button>
+          <span class="box" id="byType"> Filter by type </span>
+        </button>
+
+        <button>
+          <span class="box" id="fill">
+            <i class="fa-solid fa-rotate-right"></i>
+          </span>
+        </button>
+
+        <!-- <button id="fill"><i class="fa-solid fa-rotate-right"></i></button> -->
+      </div>
+    </div>
+
+    <div class="content">
+      <div id="page">
+        <div id="container">
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="h3">loading</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
